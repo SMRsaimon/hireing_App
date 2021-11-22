@@ -1,0 +1,244 @@
+:root {
+  /*      Theme colors        */
+  --text-black: #000000;
+  --text-grayDark: #262626;
+  --text-grayLight: #525252;
+  --text-gray: #989898;
+  --bg-gray: #c4c4c4;
+  --bg-grayLight: #f3f2ef;
+
+  /* gradient color   */
+  --background: linear-gradient(120deg, #78a0e1 0%, #56b75ec7 100%);
+
+  /*      theme font-family   */
+  --Abel: "Abel", cursive;
+  --Anton: "Anton", cursive;
+}
+
+/* Global css start  */
+
+a {
+  text-decoration: none;
+
+  color: var(--midnight);
+}
+.cursor {
+  cursor: pointer;
+}
+
+/* global css end  */
+
+/* common css start */
+.item {
+  width: 90%;
+  margin: auto;
+  border-top: 1px solid var(--bg-grayLight);
+  position: relative;
+}
+.item:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: -4px;
+  height: 100%;
+  width: 15px;
+  background: var(--bg-grayLight);
+  border-left: 1px solid var(--bg-gray);
+}
+.item h3 {
+  margin-top: 30px;
+  color: var(--text-grayLight);
+  font-size: 25px;
+}
+.singleItemImg {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+.singleItemImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.singleItemContent {
+  width: 100%;
+}
+.borderBottom {
+  position: relative;
+}
+.borderBottom:before {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  background: var(--bg-grayLight);
+  height: 1px;
+  width: 109%;
+  right: -75px;
+}
+.borderBottomwithouticons {
+  position: relative;
+}
+.borderBottomwithouticons:before {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  background: var(--bg-grayLight);
+  height: 1px;
+  width: 100%;
+  right: 0;
+}
+.singleItemContent h4 {
+  font-size: 18px;
+  color: var(--text-grayDark);
+  margin-bottom: 0;
+}
+.singleItemContent p {
+  margin-bottom: 5px;
+  color: var(--text-grayLight);
+  font-size: 15px;
+}
+.singleItemContent p:last-child {
+  color: var(--bg-gray);
+}
+
+/* common css end */
+
+/* Name section start */
+.input label {
+  font-size: 18px;
+  color: var(--text-grayDark);
+  font-weight: 600;
+}
+.input input {
+  border-radius: 5px;
+  
+  box-shadow: none;
+}
+/* Name section end */
+
+/* description section start */
+.description textarea {
+  width: 100%;
+  height: 140px;
+  border-radius: 30px;
+  padding: 20px;
+}
+.description textarea:focus {
+  box-shadow: none;
+}
+/* description section end */
+
+/* education section start  */
+#education {
+  margin-top: 40px;
+}
+
+.educationsicons {
+  margin-top: -45px;
+}
+.educationsicons button {
+  border: none;
+  width: 40px;
+  color: var(--text-grayDark);
+  height: 40px;
+  border-radius: 50%;
+}
+.educationsicons button:first-child {
+  margin-bottom: 20px;
+}
+/* education section end   */
+
+/* Experience section start   */
+.experienceItem {
+  margin: unset;
+  border-top: unset;
+  position: relative;
+  padding-left: 30px;
+}
+.experienceItem:after {
+  content: "";
+  position: absolute;
+  top: -6 px;
+  left: 0;
+  height: 100%;
+  width: 10 px;
+  background: var(--bg-grayLight);
+  border-right: 1px solid var(--bg-gray);
+  border-left: unset;
+}
+/* Experience section end   */
+
+/* certifications section start   */
+
+#certifications h4 {
+  font-size: 16px;
+  color: #222;
+}
+#certifications p {
+  font-size: 15px;
+  color: var(--text-grayDark);
+}
+#certifications p:last-child {
+  font-size: 15px;
+  color: var(--bg-gray) !important;
+}
+#certifications a {
+  font-size: 15px;
+  font-weight: 500;
+  color: gray;
+}
+a#certificationsMore {
+  color: gray;
+  font-size: 20px;
+}
+#certificationsMore i {
+  margin-left: 5px;
+}
+/* certifications section end   */
+
+/* Experience section start   */
+.experienceItem {
+  border-right: 1px solid var(--bg-gray) !important;
+}
+.experienceItemContent h4 {
+  font-size: 15px;
+  color: var(--text-grayLight);
+  margin-top: 5px;
+}
+.experienceItemContent p {
+  color: var(--text-grayLight);
+}
+.experienceItemContent p:nth-child(3) {
+  color: var(--text-gray);
+}
+.experienceItemContent p:nth-child(4) {
+  color: var(--text-gray);
+}
+.experienceItemContent p:last-child {
+  color: var(--text-grayLight);
+}
+.experienceItemContent ul {
+  padding-left: 15px;
+}
+.experienceSeemore {
+  position: relative;
+  bottom: -184px;
+  left: -83px;
+  width: 10%;
+}
+/* Experience section end   */
+
+.projectItem {
+  margin-top: 20px;
+}
+.projectItem h4 {
+  margin-bottom: 0;
+  background: #6c6b6b;
+  height: 50px;
+  padding: 15px 20px;
+  padding-top: 9px !important;
+  font-size: 20px;
+}
+.grayLight {
+  background: #c4c4c4 !important;
+}
